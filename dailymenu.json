@@ -1,0 +1,63 @@
+[
+    {
+        "restaurant": "Trinakria",
+        "dishes": [
+            {
+                "name": "A menü",
+                "price": {
+                    "amount": "1000",
+                    "currency": "HUF"
+                },
+                "content": [
+                    {
+                        "type": "soup",
+                        "title": "Húsleves"
+                    },
+                    {
+                        "type": "main",
+                        "title": "Csirkemellfile hasábbal"
+                    }
+                ]
+            },
+            {
+                "name": "B menü",
+                "price": {
+                    "amount": "1000",
+                    "currency": "HUF"
+                },
+                "content": [
+                    {
+                        "type": "soup",
+                        "title": "Gyümölcsleves"
+                    },
+                    {
+                        "type": "main",
+                        "title": "Töltött paprika"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "restaurant": "10 Minutes",
+        "dishes": [
+            {
+                "name": "Menü",
+                "price": {
+                    "amount": "1200",
+                    "currency": "HUF"
+                },
+                "content": [
+                    {
+                        "type": "soup",
+                        "title": "Zellerkrém leves"
+                    },
+                    {
+                        "type": "main",
+                        "title": "Rakott krumpli"
+                    }
+                ]
+            }
+        ]
+    }
+]

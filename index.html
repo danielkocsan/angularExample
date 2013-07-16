@@ -1,0 +1,28 @@
+<!doctype html>
+<html ng-app>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.js"></script>
+    <script type="text/javascript" src="menuController.js"></script>
+    <link href="http:////cdn.jsdelivr.net/foundation/4.2.3/css/foundation.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="panel">
+      <ul ng-controller="MenuController" class="pricing-table">
+        <li ng-repeat="item in menu">
+          <h2 class="title">{{item.restaurant}}</h2>
+          <ul>
+            <li ng-repeat="course in item.dishes">
+              <h4>{{course.name}}</h4>
+              <ul>
+                <li ng-repeat="dish in course.content" class="bullet-item">
+                  {{dish.title}}
+                </li>
+              </ul>
+              <div class="price">{{course.price.amount}}<span>{{course.price.currency}}</span></div>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>
