@@ -1,35 +1,32 @@
 <!doctype html>
 <html ng-app>
-  <head>
-    <title>Officefood</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.js"></script>
-    <script type="text/javascript" src="menuController.js"></script>
-    <link href="http:////cdn.jsdelivr.net/foundation/4.2.3/css/foundation.css" rel="stylesheet" />
-    <link href="officefood.css" rel="stylesheet" />
-  </head>
-  <body>
-    <div class="panel">
-      <ul ng-controller="MenuController" class="pricing-table">
-        <li ng-repeat="item in menu">
-          <h2 class="title">{{item.restaurant.name}}</h2>
-          <div class="info">
-            <div class="description">{{item.restaurant.address}}</div>
-            <ul>
-              <li ng-repeat="course in item.dishes">
-                <h4>{{course.name}}</h4>
-                <ul>
-                  <li ng-repeat="dish in course.content" class="bullet-item">
-                    {{dish.title}}
-                  </li>
-                </ul>
-                <div class="price">{{course.price.amount}}<span>{{course.price.currency}}</span></div>
-              </li>
+    <head>
+        <title>Officefood</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.js"></script>
+        <script type="text/javascript" src="menuController.js"></script>
+        <link href="style.css" rel="stylesheet" />
+        <link href='http://fonts.googleapis.com/css?family=Carrois+Gothic+SC' rel='stylesheet' type='text/css'>
+    </head>
+    <body>
+        <div class="content">
+            <h3>Officefood</h3>
+            <h1>Napi menü - Június 18</h1>
+            <ul ng-controller="MenuController" class="restaurant-list">
+                <li ng-repeat="item in menu" class="restaurant border">
+                    <div class="logo rounded border"></div>
+                    <h2 class="title">{{item.restaurant.name}}</h2>
+                    <a href="#" class="button info rounded">{{item.restaurant.address}}</a>
+                    <div class="course" ng-repeat="course in item.dishes">
+                        <h4 class="rounded">{{course.name}}</h4>
+                        <div class="dish">
+                            <h5 ng-repeat="dish in course.content" class="bullet-item">{{dish.title}}</h5>
+                        </div>
+                        <div class="price rounded">{{course.price.amount}}<span class="currency">{{course.price.currency}}</span></div>
+                    </div>
+                </li>
             </ul>
-          </div>
-        </li>
-      </ul>
-    </div>
-  </body>
+        </div>
+    </body>
 </html>

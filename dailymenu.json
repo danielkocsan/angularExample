@@ -19,11 +19,11 @@
                 "content": [
                     {
                         "type": "soup",
-                        "title": "Gombakrémleves"
+                        "title": "Zöldbableves"
                     },
                     {
                         "type": "main",
-                        "title": "Marhapörkölt galuskával"
+                        "title": "Négysajtos csirke sült burgonyával"
                     }
                 ]
             },
@@ -36,11 +36,11 @@
                 "content": [
                     {
                         "type": "soup",
-                        "title": "Gombakrémleves"
+                        "title": "Zöldbableves"
                     },
                     {
                         "type": "main",
-                        "title": "Krumplis tészta"
+                        "title": "Rántott karfiol hagymás burgonyával"
                     }
                 ]
             }
@@ -62,11 +62,11 @@
                 "content": [
                     {
                         "type": "soup",
-                        "title": "Francia hagymaleves"
+                        "title": "Csontleves cérnametélttel"
                     },
                     {
                         "type": "main",
-                        "title": "Hortobágyi húsos tészta"
+                        "title": "Budapesti csirketokány párolt rízzsel"
                     }
                 ]
             }
@@ -88,11 +88,11 @@
                 "content": [
                     {
                         "type": "soup",
-                        "title": "Póréhagyma krémleves"
+                        "title": "Grillezett jégsaláta baconnal és zöldfűszeres tejföllel"
                     },
                     {
                         "type": "main",
-                        "title": "Mexikói chilis pulykatokány burgonyalángosban"
+                        "title": "Vörösboros pincepörkölt"
                     }
                 ]
             }
