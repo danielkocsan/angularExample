@@ -1,6 +1,14 @@
 [
     {
-        "restaurant": "Trinakria",
+        "restaurant": {
+            "name": "Trinakria",
+            "coordinates": {
+                "longitude": "47.48606,19.07384",
+                "lattitude": "47.4858,19.074308"
+            },
+            "address": "Budapest, Vajdahunyad utca 42",
+            "postcode": 1082
+        },
         "dishes": [
             {
                 "name": "A menü",
@@ -11,7 +19,7 @@
                 "content": [
                     {
                         "type": "soup",
-                        "title": "Gambakrémleves"
+                        "title": "Gombakrémleves"
                     },
                     {
                         "type": "main",
@@ -28,7 +36,7 @@
                 "content": [
                     {
                         "type": "soup",
-                        "title": "Gambakrémleves"
+                        "title": "Gombakrémleves"
                     },
                     {
                         "type": "main",
@@ -39,7 +47,9 @@
         ]
     },
     {
-        "restaurant": "10 Minutes",
+        "restaurant": {
+            "name": "10 Minutes"
+        },
         "dishes": [
             {
                 "name": "Menü",
@@ -55,6 +65,30 @@
                     {
                         "type": "main",
                         "title": "Hortobágyi húsos tészta"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "restaurant": {
+            "name": "Kompót bisztró"
+        },
+        "dishes": [
+            {
+                "name": "Menü",
+                "price": {
+                    "amount": "990",
+                    "currency": "HUF"
+                },
+                "content": [
+                    {
+                        "type": "soup",
+                        "title": "Póréhagyma krémleves"
+                    },
+                    {
+                        "type": "main",
+                        "title": "Mexikói chilis pulykatokány burgonyalángosban"
                     }
                 ]
             }
