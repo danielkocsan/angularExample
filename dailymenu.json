@@ -5,34 +5,34 @@
             {
                 "name": "A menü",
                 "price": {
-                    "amount": "1000",
+                    "amount": "900",
                     "currency": "HUF"
                 },
                 "content": [
                     {
                         "type": "soup",
-                        "title": "Húsleves"
+                        "title": "Gambakrémleves"
                     },
                     {
                         "type": "main",
-                        "title": "Csirkemellfile hasábbal"
+                        "title": "Marhapörkölt galuskával"
                     }
                 ]
             },
             {
                 "name": "B menü",
                 "price": {
-                    "amount": "1000",
+                    "amount": "900",
                     "currency": "HUF"
                 },
                 "content": [
                     {
                         "type": "soup",
-                        "title": "Gyümölcsleves"
+                        "title": "Gambakrémleves"
                     },
                     {
                         "type": "main",
-                        "title": "Töltött paprika"
+                        "title": "Krumplis tészta"
                     }
                 ]
             }
@@ -44,17 +44,17 @@
             {
                 "name": "Menü",
                 "price": {
-                    "amount": "1200",
+                    "amount": "850",
                     "currency": "HUF"
                 },
                 "content": [
                     {
                         "type": "soup",
-                        "title": "Zellerkrém leves"
+                        "title": "Francia hagymaleves"
                     },
                     {
                         "type": "main",
-                        "title": "Rakott krumpli"
+                        "title": "Hortobágyi húsos tészta"
                     }
                 ]
             }
