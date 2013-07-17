@@ -48,7 +48,9 @@
     },
     {
         "restaurant": {
-            "name": "10 Minutes"
+            "name": "10 Minutes",
+            "address": "Budapest, Futó utca 47.",
+            "postcode": 1082
         },
         "dishes": [
             {
@@ -72,7 +74,9 @@
     },
     {
         "restaurant": {
-            "name": "Kompót bisztró"
+            "name": "Kompót bisztró",
+            "address": "Budapest, Corvin sétány 1/B",
+            "postcode": 1082
         },
         "dishes": [
             {
