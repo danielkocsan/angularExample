@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width" />
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.js"></script>
         <script type="text/javascript" src="menuController.js"></script>
-        <link href="style.css" rel="stylesheet" />
+        <link href="sushi.css" rel="stylesheet" />
         <link href='http://fonts.googleapis.com/css?family=Carrois+Gothic+SC' rel='stylesheet' type='text/css'>
     </head>
     <body>
@@ -19,7 +19,7 @@
                     <h2 class="title">{{item.restaurant.name}}</h2>
                     <a href="#" class="button info rounded">{{item.restaurant.address}}</a>
                     <div class="course" ng-repeat="course in item.dishes">
-                        <h4 class="rounded">{{course.name}}</h4>
+                        <h4>{{course.name}}</h4>
                         <div class="dish">
                             <h5 ng-repeat="dish in course.content" class="bullet-item">{{dish.title}}</h5>
                         </div>
