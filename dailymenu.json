@@ -7,16 +7,17 @@
                 "lattitude": "47.4858,19.074308"
             },
             "address": "Budapest, Vajdahunyad utca 42",
+            "phone": "+36207708299",
             "postcode": 1082
         },
-        "dishes": [
+        "menus": [
             {
                 "name": "A menü",
                 "price": {
                     "amount": "900",
                     "currency": "HUF"
                 },
-                "content": [
+                "dishes": [
                     {
                         "type": "soup",
                         "title": "Zöldbableves"
@@ -33,7 +34,7 @@
                     "amount": "900",
                     "currency": "HUF"
                 },
-                "content": [
+                "dishes": [
                     {
                         "type": "soup",
                         "title": "Zöldbableves"
@@ -50,16 +51,17 @@
         "restaurant": {
             "name": "10 Minutes",
             "address": "Budapest, Futó utca 47.",
+            "phone": "+36207708299",
             "postcode": 1082
         },
-        "dishes": [
+        "menus": [
             {
                 "name": "Menü",
                 "price": {
                     "amount": "850",
                     "currency": "HUF"
                 },
-                "content": [
+                "dishes": [
                     {
                         "type": "soup",
                         "title": "Csontleves cérnametélttel"
@@ -76,16 +78,17 @@
         "restaurant": {
             "name": "Kompót bisztró",
             "address": "Budapest, Corvin sétány 1/B",
+            "phone": "+36207708299",
             "postcode": 1082
         },
-        "dishes": [
+        "menus": [
             {
                 "name": "Menü",
                 "price": {
                     "amount": "990",
                     "currency": "HUF"
                 },
-                "content": [
+                "dishes": [
                     {
                         "type": "soup",
                         "title": "Grillezett jégsaláta baconnal és zöldfűszeres tejföllel"

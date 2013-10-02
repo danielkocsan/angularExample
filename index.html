@@ -2,31 +2,33 @@
 <html ng-app>
     <head>
         <title>Officefood</title>
+        <meta name="description" content="A Covin negyed környező éttermeinek napi menükínálata" />
+        <meta name="keywords" content="menü, napimenü, hetimenü, étterem ajánlat" />
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width" />
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.js"></script>
         <script type="text/javascript" src="menuController.js"></script>
-        <link href="sushi.css" rel="stylesheet" />
         <link href='http://fonts.googleapis.com/css?family=Carrois+Gothic+SC' rel='stylesheet' type='text/css'>
     </head>
-    <body>
-        <div class="content">
-            <h3>Officefood</h3>
-            <h1>Napi menü - Június 18</h1>
-            <ul ng-controller="MenuController" class="restaurant-list">
-                <li ng-repeat="item in menu" class="restaurant border">
-                    <div class="logo rounded border"></div>
-                    <h2 class="title">{{item.restaurant.name}}</h2>
-                    <a href="#" class="button info rounded">{{item.restaurant.address}}</a>
-                    <div class="course" ng-repeat="course in item.dishes">
-                        <h4>{{course.name}}</h4>
-                        <div class="dish">
-                            <h5 ng-repeat="dish in course.content" class="bullet-item">{{dish.title}}</h5>
-                        </div>
-                        <div class="price rounded">{{course.price.amount}}<span class="currency">{{course.price.currency}}</span></div>
-                    </div>
-                </li>
-            </ul>
-        </div>
+    <body ng-controller="MenuController" itemscope itemtype="http://schema.org/WebPage">
+        <header>
+            <span itemprop="name">Officefood</span>
+            <h1 itemprop="description">Napi menü - Június 18</h1>
+        </header>
+        <section ng-repeat="item in menu" itemscope itemtype="http://schema.org/Restaurant">
+            <div class="logo rounded border"></div>
+            <address>
+                <h1 itemprop="name">{{item.restaurant.name}}</h1>
+                <a href="#">{{item.restaurant.address}}</a>
+                <a href="tel:+362422121213">{{item.restaurant.phone}}</a>
+            </address>
+            <section ng-repeat="course in item.menus">
+                {{course.name}}
+                <ol>
+                    <li ng-repeat="dish in course.dishes" class="bullet-item">{{dish.title}}</li>    
+                </ol>
+                <div>{{course.price.amount}}<span class="currency">{{course.price.currency}}</span></div>
+            </section>
+        </section>
     </body>
 </html>
