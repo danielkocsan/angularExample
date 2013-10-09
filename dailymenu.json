@@ -6,7 +6,8 @@
                 "longitude": "47.48606,19.07384",
                 "lattitude": "47.4858,19.074308"
             },
-            "address": "Budapest, Vajdahunyad utca 42",
+            "city": "Budapest",
+            "streetAddress": "Vajdahunyad utca 42",
             "phone": "+36207708299",
             "postcode": 1082
         },
@@ -50,7 +51,8 @@
     {
         "restaurant": {
             "name": "10 Minutes",
-            "address": "Budapest, Futó utca 47.",
+            "city": "Budapest",
+            "streetAddress": "Futó utca 47.",
             "phone": "+36207708299",
             "postcode": 1082
         },
@@ -77,7 +79,8 @@
     {
         "restaurant": {
             "name": "Kompót bisztró",
-            "address": "Budapest, Corvin sétány 1/B",
+            "city": "Budapest",
+            "streetAddress": "Corvin sétány 1/B",
             "phone": "+36207708299",
             "postcode": 1082
         },

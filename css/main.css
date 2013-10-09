@@ -1,0 +1,19 @@
+/*   C O L O R S    */
+/*   S T Y L E S    */
+body {
+  font-family: 'Helvetica', 'arial', sans-serif;
+  background-color: #fff8d9;
+}
+.appName {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 2.5em;
+}
+header {
+  background-color: #605048;
+  border-bottom: 1px solid #f3945f;
+  color: #ffd393;
+  padding: 0.75em;
+}
+header h1 {
+  font-weight: bold;
+}

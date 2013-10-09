@@ -8,24 +8,29 @@
         <meta name="viewport" content="width=device-width" />
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.js"></script>
         <script type="text/javascript" src="menuController.js"></script>
-        <link href='http://fonts.googleapis.com/css?family=Carrois+Gothic+SC' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Ubuntu:400italic' rel='stylesheet' type='text/css'>
+        <link href="css/reset.css" rel="stylesheet" type="text/css">
+        <link href="css/main.css" rel="stylesheet" type="text/css">
     </head>
     <body ng-controller="MenuController" itemscope itemtype="http://schema.org/WebPage">
         <header>
-            <span itemprop="name">Officefood</span>
+            <span class="appName" itemprop="name">Officefood</span>
             <h1 itemprop="description">Napi menü - Június 18</h1>
         </header>
         <section ng-repeat="item in menu" itemscope itemtype="http://schema.org/Restaurant">
             <div class="logo rounded border"></div>
-            <address>
-                <h1 itemprop="name">{{item.restaurant.name}}</h1>
-                <a href="#">{{item.restaurant.address}}</a>
-                <a href="tel:+362422121213">{{item.restaurant.phone}}</a>
+            <h1 itemprop="name">{{item.restaurant.name}}</h1>
+            <address itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                <a href="#">
+                    <span itemprop="addressLocality">{{item.restaurant.city}}</span>, 
+                    <span itemprop="streetAddress">{{item.restaurant.streetAddress}}</span>
+                </a>
+                <a href="tel:+362422121213" itemprop="telephone">{{item.restaurant.phone}}</a>
             </address>
             <section ng-repeat="course in item.menus">
                 {{course.name}}
                 <ol>
-                    <li ng-repeat="dish in course.dishes" class="bullet-item">{{dish.title}}</li>    
+                    <li ng-repeat="dish in course.dishes" class="bullet-item" itemprop="menu">{{dish.title}}</li>    
                 </ol>
                 <div>{{course.price.amount}}<span class="currency">{{course.price.currency}}</span></div>
             </section>
