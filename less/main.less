@@ -3,6 +3,8 @@
 @backgroundDark: #605048;
 @backgroundLight: #fff8d9;
 @headingColor: #ffd393;
+@priceLabelBackground: #588d92;
+@priceLabelFont: #ffffff;
 
 /*   S T Y L E S    */
 
@@ -25,4 +27,43 @@ header {
     h1 {
         font-weight: bold;
     }
+}
+
+.priceTag {
+    background-color: @priceLabelBackground;
+    border-radius: 0 .3em .3em 0;
+    color: @priceLabelFont;
+    padding: .5em 1em;
+    position: relative;
+    float: right;
+    margin: .5em;
+    box-shadow: 1px 0px 3px 0 rgba(0,0,0,.3);
+}
+.priceTag:before {
+    content: '';
+    position: absolute;
+    display: block;
+    top: 0;
+    left: -1em;
+    height: 0;
+    width: 0;
+    border-top: 1em solid transparent;
+    border-bottom: 1em solid transparent;
+    border-right: 1em solid @priceLabelBackground;
+}
+
+.priceTag:after {
+    content: '';
+    display: block;
+    position: absolute;
+    height: .3em;
+    width: .3em;
+    border-radius: 50%;
+    border: 1px solid @backgroundDark;
+    background-color: @backgroundLight;
+    top: 50%;
+    left: 0;
+    margin-top: -.15em;
+    margin-left: -.15em;
+    box-shadow: 0 0 0 .7px rgba(0,0,0,.4);
 }
