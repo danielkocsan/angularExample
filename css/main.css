@@ -8,14 +8,70 @@ body {
   font-family: 'Ubuntu', sans-serif;
   font-size: 2.5em;
 }
-header {
+.mainHeader {
   background-color: #605048;
-  border-bottom: 1px solid #f3945f;
+  border-bottom: 2px solid #f3945f;
   color: #ffd393;
   padding: 0.75em;
 }
-header h1 {
+.mainHeader h1 {
   font-weight: bold;
+}
+.restaurant {
+  background-color: #fff;
+  box-shadow: 3px 4px 4px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e7e7e7;
+  margin: 1em 0.75em 1em 0.75em;
+  /* 16px -> 1em, 12px -> 0.75 */
+
+  padding: 0.875em;
+  /* 14px / 16px */
+
+  clear: both;
+}
+.restaurant .logo {
+  float: left;
+  width: 29%;
+  margin-right: 4.5%;
+  max-width: 120px;
+}
+.restaurant .logo img {
+  max-width: 100%;
+  margin-bottom: 1em;
+}
+.restaurant .restaurantInfo {
+  color: #414141;
+}
+.restaurant .restaurantInfo a {
+  color: inherit;
+  text-decoration: none;
+}
+.restaurant .restaurantName {
+  color: #4f8502;
+  font-weight: bold;
+  font-size: 1.5em;
+  /* 24/16 */
+
+  letter-spacing: -1px;
+}
+.restaurant .course {
+  clear: both;
+  margin-bottom: 10%;
+}
+.restaurant .courseName {
+  font-size: 0.875em;
+  font-weight: bold;
+  color: #cecece;
+  border-bottom: 0.2857em solid #cecece;
+  margin-bottom: 0.625em;
+  padding: 0.625em 0;
+}
+.restaurant .dishes {
+  font-size: 0.875em;
+  font-weight: bold;
+}
+.restaurant .dish {
+  margin: 0.2em 0;
 }
 .priceTag {
   background-color: #588d92;

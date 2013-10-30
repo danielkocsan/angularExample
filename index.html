@@ -13,24 +13,26 @@
         <link href="css/main.css" rel="stylesheet" type="text/css">
     </head>
     <body ng-controller="MenuController" itemscope itemtype="http://schema.org/WebPage">
-        <header>
+        <header class="mainHeader">
             <span class="appName" itemprop="name">Officefood</span>
-            <h1 itemprop="description">Napi menü - Június 18</h1>
+            <h1 itemprop="description">Napi menü - Október 30</h1>
         </header>
-        <section ng-repeat="item in menu" itemscope itemtype="http://schema.org/Restaurant">
-            <div class="logo rounded border"></div>
-            <h1 itemprop="name">{{item.restaurant.name}}</h1>
-            <address itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-                <a href="#">
-                    <span itemprop="addressLocality">{{item.restaurant.city}}</span>, 
-                    <span itemprop="streetAddress">{{item.restaurant.streetAddress}}</span>
-                </a>
-                <a href="tel:+362422121213" itemprop="telephone">{{item.restaurant.phone}}</a>
-            </address>
-            <section ng-repeat="course in item.menus">
-                {{course.name}}
-                <ol>
-                    <li ng-repeat="dish in course.dishes" class="bullet-item" itemprop="menu">{{dish.title}}</li>    
+        <section class="restaurant" ng-repeat="item in menu" itemscope itemtype="http://schema.org/Restaurant">
+            <div class="logo rounded border"><img src="http://placehold.it/120x120" alt="{{item.restaurant.name}} - logo"/></div>
+            <div class="restaurantInfo">
+                <h1 class="restaurantName" itemprop="name">{{item.restaurant.name}}</h1>
+                <address itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                    <a href="#">
+                        <span itemprop="addressLocality">{{item.restaurant.city}}</span>, 
+                        <span itemprop="streetAddress">{{item.restaurant.streetAddress}}</span>
+                    </a>
+                    <a href="tel:+362422121213" itemprop="telephone">{{item.restaurant.phone}}</a>
+                </address>
+            </div>
+            <section class="course" ng-repeat="course in item.menus">
+                <header class="courseName">{{course.name}}</header>
+                <ol class="dishes">
+                    <li class="dish" ng-repeat="dish in course.dishes" itemprop="menu">{{dish.title}}</li>    
                 </ol>
                 <div class="priceTag">{{course.price.amount}}<span class="currency">{{course.price.currency}}</span></div>
             </section>

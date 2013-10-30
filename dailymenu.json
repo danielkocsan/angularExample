@@ -16,7 +16,7 @@
                 "name": "A menü",
                 "price": {
                     "amount": "900",
-                    "currency": "HUF"
+                    "currency": "Ft"
                 },
                 "dishes": [
                     {
@@ -33,7 +33,7 @@
                 "name": "B menü",
                 "price": {
                     "amount": "900",
-                    "currency": "HUF"
+                    "currency": "Ft"
                 },
                 "dishes": [
                     {
@@ -61,7 +61,7 @@
                 "name": "Menü",
                 "price": {
                     "amount": "850",
-                    "currency": "HUF"
+                    "currency": "Ft"
                 },
                 "dishes": [
                     {
@@ -89,7 +89,7 @@
                 "name": "Menü",
                 "price": {
                     "amount": "990",
-                    "currency": "HUF"
+                    "currency": "Ft"
                 },
                 "dishes": [
                     {
