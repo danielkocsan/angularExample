@@ -9,7 +9,10 @@
             "city": "Budapest",
             "streetAddress": "Vajdahunyad utca 42",
             "phone": "+36207708299",
-            "postcode": 1082
+            "postcode": 1082,
+            "logos": {
+                "m": "medium/trinakria.jpg"
+            }
         },
         "menus": [
             {
@@ -54,7 +57,10 @@
             "city": "Budapest",
             "streetAddress": "Futó utca 47.",
             "phone": "+36207708299",
-            "postcode": 1082
+            "postcode": 1082,
+            "logos": {
+                "m": "medium/10minutes.jpg"
+            }
         },
         "menus": [
             {
@@ -82,7 +88,10 @@
             "city": "Budapest",
             "streetAddress": "Corvin sétány 1/B",
             "phone": "+36207708299",
-            "postcode": 1082
+            "postcode": 1082,
+            "logos": {
+                "m": "medium/kompot.jpg"
+            }
         },
         "menus": [
             {
