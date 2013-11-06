@@ -17,6 +17,43 @@ body {
 .mainHeader h1 {
   font-weight: bold;
 }
+.priceTag {
+  background-color: #588d92;
+  border-radius: 0 .3em .3em 0;
+  color: #ffffff;
+  padding: .5em 1em;
+  position: relative;
+  float: right;
+  margin: .5em;
+  box-shadow: 1px 0px 3px 0 rgba(0, 0, 0, 0.3);
+}
+.priceTag:before {
+  content: '';
+  position: absolute;
+  display: block;
+  top: 0;
+  left: -1em;
+  height: 0;
+  width: 0;
+  border-top: 1em solid transparent;
+  border-bottom: 1em solid transparent;
+  border-right: 1em solid #588d92;
+}
+.priceTag:after {
+  content: '';
+  display: block;
+  position: absolute;
+  height: .3em;
+  width: .3em;
+  border-radius: 50%;
+  border: 1px solid #605048;
+  background-color: #fff8d9;
+  top: 50%;
+  left: 0;
+  margin-top: -0.15em;
+  margin-left: -0.15em;
+  box-shadow: 0 0 0 0.7px rgba(0, 0, 0, 0.4);
+}
 .restaurant {
   background-color: #fff;
   box-shadow: 3px 4px 4px rgba(0, 0, 0, 0.1);
@@ -71,42 +108,41 @@ body {
   font-weight: bold;
 }
 .restaurant .dish {
-  margin: 0.2em 0;
+  margin: 0.3em 0;
+  line-height: 1.2;
 }
-.priceTag {
+.restaurant .priceTag {
   background-color: #588d92;
-  border-radius: 0 .3em .3em 0;
-  color: #ffffff;
-  padding: .5em 1em;
-  position: relative;
-  float: right;
-  margin: .5em;
-  box-shadow: 1px 0px 3px 0 rgba(0, 0, 0, 0.3);
 }
-.priceTag:before {
-  content: '';
-  position: absolute;
-  display: block;
-  top: 0;
-  left: -1em;
-  height: 0;
-  width: 0;
-  border-top: 1em solid transparent;
-  border-bottom: 1em solid transparent;
-  border-right: 1em solid #588d92;
+.restaurant address {
+  font-size: 0.75em;
+  /* 16px -> 1em, 12px -> 0.75 */
+
 }
-.priceTag:after {
+.restaurant address .location,
+.restaurant address .phoneNumber {
+  display: block;
+}
+.restaurant address .location {
+  margin-bottom: 0.5em;
+}
+.restaurant address .location:before {
+  background: url(../img/officefood_sprite.png);
+  display: inline-block;
+  width: 11px;
+  height: 17px;
+  background-position: 0 -14px;
+  content: "";
+}
+.restaurant address .phoneNumber:before {
+  background: url(../img/officefood_sprite.png);
+  display: inline-block;
+  width: 16px;
+  height: 12px;
+  content: "";
+}
+.restaurant:after {
   content: '';
   display: block;
-  position: absolute;
-  height: .3em;
-  width: .3em;
-  border-radius: 50%;
-  border: 1px solid #605048;
-  background-color: #fff8d9;
-  top: 50%;
-  left: 0;
-  margin-top: -0.15em;
-  margin-left: -0.15em;
-  box-shadow: 0 0 0 0.7px rgba(0, 0, 0, 0.4);
+  clear: both;
 }

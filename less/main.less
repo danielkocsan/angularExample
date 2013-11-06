@@ -8,6 +8,8 @@
 @priceLabelBackground: #588d92;
 @priceLabelFont: #fff;
 @courseNameColor: #cecece;
+@restaurantName: #4f8502;
+@restaurantInfo: #414141;
 
 /*   S T Y L E S    */
 
@@ -127,7 +129,8 @@ body {
     }
     
     .dish {
-        margin: 0.2em 0;
+        margin: 0.3em 0;
+        line-height: 1.2;
     }
     
     .priceTag {
@@ -135,8 +138,44 @@ body {
         
     }
     
-
+    address {
+        font-size: 0.75em; /* 16px -> 1em, 12px -> 0.75 */
+        
+        .location,
+        .phoneNumber {
+            display: block;
+        }
+        
+        .location {
+            margin-bottom: 0.5em;
+        }
+        
+        .location:before {
+                background: url(../img/officefood_sprite.png);
+                display: inline-block;
+                width: 11px;
+                height: 17px;
+                background-position: 0 -14px;
+                content: "";
+        }
+        
+        .phoneNumber:before {
+                background: url(../img/officefood_sprite.png);
+                display: inline-block;
+                width: 16px;
+                height: 12px;
+                content: "";
+        }
+        
+        
+    }
 }
+.restaurant:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
 
 
 
