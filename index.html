@@ -17,7 +17,8 @@
             <span class="appName" itemprop="name">Officefood</span>
             <h1 itemprop="description">Napi menü - Október 30</h1>
         </header>
-        <section class="restaurant" ng-repeat="item in menu" itemscope itemtype="http://schema.org/Restaurant">
+        <input ng-model="searchRestaurant" class="searchRestaurant" placeholder="Gyorskeresés...">
+        <section class="restaurant" ng-repeat="item in filteredMenu = (menu | filter:searchRestaurant)" itemscope itemtype="http://schema.org/Restaurant">
             <div class="logo rounded border"><img ng-src="img/restaurant-logos/{{item.restaurant.logos.m}}" alt="{{item.restaurant.name}} - logo"/></div>
             <div class="restaurantInfo">
                 <h1 class="restaurantName" itemprop="name">{{item.restaurant.name}}</h1>
@@ -37,6 +38,7 @@
                 <div class="priceTag">{{course.price.amount}}<span class="currency">{{course.price.currency}}</span></div>
             </section>
         </section>
+        <h2 ng-show="!filteredMenu.length">Nincs találat</h2>
         <script>
           (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
           (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
